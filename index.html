@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Türkan Çakar Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-desktop"></i>
+                    <div class="logo-text">Türkan Çakar</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                 <div class="hero-pic">
+                    <img src="img/IMG_0469.JPEG" alt="profile pic">
+                 </div>
+                 <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Junior Software Developer</span></h5>
+                    <h1>Türkan Çakar</h1>
+                    <p> Hello! I'm Türkan. I am a developer at the beginning of my journey in the software world. On this site, I share projects that I have created using HTML5, CSS3, JavaScript, Python, Bootstrap3 and more. My goal is to become a Full Stack Developer and strengthen my skills through hands-on experience. If you want to follow my learning journey and see what I can do, you are at the right place!
+                    </p>
+
+                    <div class="btn-group">
+                       <a href="#" class="btn active">Download CV</a>
+                       <a href="#" class="btn">Contact</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="www.linkedin.com/in/türkan-çakar-b0aba629a"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/turkan.ckr/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/turkancakar"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                 </div>
+                 
+            </div>
+        </div>
+        <div class="parent-container"> 
+            <h2 class="myprojects-text">My Projects</h2>
+        </div>
+        <div class="portfolio-container">
+                <div class="portfolio-text">
+                    <h2>Organic Food Web</h2>
+                    <p>This project is designed as a modern organic food e-commerce website. Developed using SASS and the BEM methodology, it features a responsive layout with Bootstrap 5.3.3. Google Fonts (Inter, Lato, Rubik) are used, and HTML5 with CSS animations provides a rich user experience. Modern web features such as video backgrounds, form validation, and full device compatibility are also integrated.</p>
+                </div>
+                <div class="portfolio-media">
+                    <video src="video/OrganicFoodVideo.mp4" controls></video>
+                    
+                </div>
+            </div>
+
+            <div class="portfolio-container">
+                <div class="portfolio-text">
+                    <h2>The Higher Lower Game</h2>
+                    <p>This project is a "Higher or Lower" game based on guessing the follower counts of social media accounts. The player guesses which of the two accounts has more followers. Correct guesses increase the score, while a wrong guess ends the game. Developed with HTML, CSS, and JavaScript, the game offers a modern user experience with a Turkish interface, responsive design, and SweetAlert2 notifications.</p>
+                </div>
+                <div class="portfolio-media">
+                    <img src="img/higher_lower.png" alt="">
+                </div>
+            </div>
+
+            <div class="portfolio-container">
+                <div class="portfolio-text">
+                    <h2>Weather Forecast</h2>
+                    <p>I used Html Css and Javascript when making this Weather Forecast. I pulled the API from OpenWeather.   You can find out the weather by entering the desired city name in the "Enter City" section.</p>
+                </div>
+                <div class="portfolio-media">
+                    <img src="img/weather.png" alt="">
+                </div>
+            </div>
+     </div>
+     <!---typed js for typing text effect-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        /** creating button click show hide navbar **/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Frontend Developer","UX Designer","Web Developer"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+     </script>
+</body>
+</html>
