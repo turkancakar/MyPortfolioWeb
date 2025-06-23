@@ -397,3 +397,25 @@ nav .navlinks li a{
     font-size: 1rem;
 }
 
+.contact-links {
+  flex: 1 1 45%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.contact-links a {
+  background: #444;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  color: #e5e5e5;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.contact-links a:hover {
+  background: #fbb034;
+  color: #222;
+}
